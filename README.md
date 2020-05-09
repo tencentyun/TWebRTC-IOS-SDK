@@ -1,4 +1,4 @@
 ### TWebRTC-IOS-SDK
 
 
-参考https://github.com/tencentyun/webrtc-client-native.git编译编译
+参考https://github.com/tencentyun/TWebRTC.git 编译编译
