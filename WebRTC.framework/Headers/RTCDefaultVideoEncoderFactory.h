@@ -21,9 +21,12 @@ NS_ASSUME_NONNULL_BEGIN
 RTC_OBJC_EXPORT
 @interface RTCDefaultVideoEncoderFactory : NSObject <RTCVideoEncoderFactory>
 
+@property(nonatomic) BOOL useCodecBFrame;
 @property(nonatomic, retain) RTCVideoCodecInfo *preferredCodec;
 
 + (NSArray<RTCVideoCodecInfo *> *)supportedCodecs;
+
+
 
 @end
 

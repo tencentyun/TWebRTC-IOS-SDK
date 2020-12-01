@@ -43,6 +43,11 @@
 #import <WebRTC/RTCVideoDecoderH264.h>
 #import <WebRTC/RTCVideoEncoderFactoryH264.h>
 #import <WebRTC/RTCVideoEncoderH264.h>
+#import <WebRTC/RTCH265ProfileLevelId.h>
+#import <WebRTC/RTCVideoDecoderFactoryH265.h>
+#import <WebRTC/RTCVideoDecoderH265.h>
+#import <WebRTC/RTCVideoEncoderFactoryH265.h>
+#import <WebRTC/RTCVideoEncoderH265.h>
 #import <WebRTC/RTCCVPixelBuffer.h>
 #import <WebRTC/RTCCameraPreviewView.h>
 #import <WebRTC/RTCDispatcher.h>

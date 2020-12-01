@@ -226,6 +226,7 @@ RTC_OBJC_EXPORT
  */
 - (void)removeStream:(RTCMediaStream *)stream;
 
+#ifdef WEBRTC_BUILD_SENDSTREAM
 /** Add a new media stream track to be sent on this peer connection, and return
  *  the newly created RTCRtpSender. The RTCRtpSender will be associated with
  *  the streams specified in the |streamIds| list.
@@ -244,6 +245,7 @@ RTC_OBJC_EXPORT
  *  Returns YES on success.
  */
 - (BOOL)removeTrack:(RTCRtpSender *)sender;
+#endif
 
 /** addTransceiver creates a new RTCRtpTransceiver and adds it to the set of
  *  transceivers. Adding a transceiver will cause future calls to CreateOffer
@@ -298,6 +300,7 @@ RTC_OBJC_EXPORT
 /** Apply the  supported default RTCSessionDescription as the remote description. */
 - (void)defaultRemoteDescription:(RTCSessionDescription *)localSDP
         liveBroadcastingStreamUrl:(NSString*)liveBroadcastingStreamUrl
+        isHevc:(BOOL)isHevc
         completionHandler:(nullable void (^)(NSError *_Nullable error))completionHandler;
 
 /** Limits the bandwidth allocated for all RTP streams sent by this
@@ -348,11 +351,13 @@ typedef void (^RTCStatisticsCompletionHandler)(RTCStatisticsReport *);
 /** Gather statistic through the v2 statistics API. */
 - (void)statisticsWithCompletionHandler:(RTCStatisticsCompletionHandler)completionHandler;
 
+#ifdef WEBRTC_BUILD_SENDSTREAM
 /** Spec-compliant getStats() performing the stats selection algorithm with the
  *  sender.
  */
 - (void)statisticsForSender:(RTCRtpSender *)sender
           completionHandler:(RTCStatisticsCompletionHandler)completionHandler;
+#endif
 
 /** Spec-compliant getStats() performing the stats selection algorithm with the
  *  receiver.
@@ -367,7 +372,7 @@ typedef struct WEBRTC_Plugin_Protocol {
 //    int (*onSendOfferCallback)(const char* type, char* sdp);
 //    int (*onVideoDataCallback)(const uint8_t* video_data, int length, int64_t pts);
 //    int (*onAudioDataCallback)(const void* audio_data, int length, int64_t pts);
-    int (*webrtc_plugin_open)(void *h, const char *uri, int flags);
+    int (*webrtc_plugin_open)(void *h, const char *uri, int flags, bool isHevc);
     int (*webrtc_close)(void *h);
     
 } WEBRTC_Protocol;

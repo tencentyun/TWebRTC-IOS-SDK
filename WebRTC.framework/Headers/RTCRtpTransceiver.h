@@ -12,7 +12,9 @@
 
 #import "RTCMacros.h"
 #import "RTCRtpReceiver.h"
+#ifdef WEBRTC_BUILD_SENDSTREAM
 #import "RTCRtpSender.h"
+#endif
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -77,8 +79,9 @@ RTC_OBJC_EXPORT
  *  present, regardless of the direction of media.
  *  https://w3c.github.io/webrtc-pc/#dom-rtcrtptransceiver-sender
  */
+#ifdef WEBRTC_BUILD_SENDSTREAM
 @property(nonatomic, readonly) RTCRtpSender *sender;
-
+#endif
 /** The receiver attribute exposes the RTCRtpReceiver corresponding to the RTP
  *  media that may be received with the transceiver's mid. The receiver is
  *  always present, regardless of the direction of media.

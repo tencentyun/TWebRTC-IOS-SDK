@@ -585,6 +585,50 @@ SOFTWARE.
 
 ```
 
+# g711
+```
+/*
+ * SpanDSP - a series of DSP components for telephony
+ *
+ * g711.h - In line A-law and u-law conversion routines
+ *
+ * Written by Steve Underwood &lt;steveu@coppice.org&gt;
+ *
+ * Copyright (C) 2001 Steve Underwood
+ *
+ *  Despite my general liking of the GPL, I place this code in the
+ *  public domain for the benefit of all mankind - even the slimy
+ *  ones who might try to proprietize my work and use it to my
+ *  detriment.
+ */
+
+```
+
+# g722
+```
+/*
+ * SpanDSP - a series of DSP components for telephony
+ *
+ * g722_decode.c - The ITU G.722 codec, decode part.
+ *
+ * Written by Steve Underwood &lt;steveu@coppice.org&gt;
+ *
+ * Copyright (C) 2005 Steve Underwood
+ *
+ *  Despite my general liking of the GPL, I place my own contributions
+ *  to this code in the public domain for the benefit of all mankind -
+ *  even the slimy ones who might try to proprietize my work and use it
+ *  to my detriment.
+ *
+ * Based in part on a single channel G.722 codec which is:
+ *
+ * Copyright (c) CMU 1993
+ * Computer Science, Speech Group
+ * Chengxiang Lu and Alex Hauptmann
+ */
+
+```
+
 # jsoncpp
 ```
 The JsonCpp library's source code, including accompanying documentation, 
@@ -682,6 +726,42 @@ license you like.
  * OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  */
+
+```
+
+# libvpx
+```
+Copyright (c) 2010, The WebM Project authors. All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are
+met:
+
+  * Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+
+  * Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the
+    distribution.
+
+  * Neither the name of Google, nor the WebM Project, nor the names
+    of its contributors may be used to endorse or promote products
+    derived from this software without specific prior written
+    permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+&quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
 
 ```
 
@@ -895,6 +975,41 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  * Thanks.
  * Kevin
  */
+
+```
+
+# usrsctp
+```
+(Copied from the COPYRIGHT file of
+https://code.google.com/p/sctp-refimpl/source/browse/trunk/COPYRIGHT)
+--------------------------------------------------------------------------------
+
+Copyright (c) 2001, 2002 Cisco Systems, Inc.
+Copyright (c) 2002-12 Randall R. Stewart
+Copyright (c) 2002-12 Michael Tuexen
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:
+
+1. Redistributions of source code must retain the above copyright
+   notice, this list of conditions and the following disclaimer.
+2. Redistributions in binary form must reproduce the above copyright
+   notice, this list of conditions and the following disclaimer in the
+   documentation and/or other materials provided with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND
+ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+SUCH DAMAGE.
 
 ```
 
