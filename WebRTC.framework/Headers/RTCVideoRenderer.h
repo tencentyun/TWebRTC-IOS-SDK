@@ -30,6 +30,9 @@ RTC_OBJC_EXPORT
 
 -(void)pause:(BOOL)isPause;
 
+@optional
+-(RTCVideoFrame*)captureFrame;
+
 @end
 
 RTC_OBJC_EXPORT
