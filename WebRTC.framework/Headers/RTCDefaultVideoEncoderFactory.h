@@ -25,6 +25,7 @@ RTC_OBJC_EXPORT
 @property(nonatomic, retain) RTCVideoCodecInfo *preferredCodec;
 
 + (NSArray<RTCVideoCodecInfo *> *)supportedCodecs;
++ (NSArray<RTCVideoCodecInfo *> *)supportedCodecsNOBFrame;
 
 
 

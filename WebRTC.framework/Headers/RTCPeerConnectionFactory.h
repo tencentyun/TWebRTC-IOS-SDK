@@ -33,6 +33,10 @@ RTC_OBJC_EXPORT
 /* Initialize object with default H264 video encoder/decoder factories */
 - (instancetype)init;
 
+- (instancetype)initWithEncoderFactory:(nullable id<RTCVideoEncoderFactory>)encoderFactory
+                     decoderFactory:(nullable id<RTCVideoDecoderFactory>)decoderFactory
+                     audioUseAAC:(BOOL)audioUseAAC;
+
 /* Initialize object with injectable video encoder/decoder factories */
 - (instancetype)initWithEncoderFactory:(nullable id<RTCVideoEncoderFactory>)encoderFactory
                         decoderFactory:(nullable id<RTCVideoDecoderFactory>)decoderFactory;
