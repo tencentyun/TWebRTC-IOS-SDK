@@ -30,6 +30,8 @@ RTC_OBJC_EXPORT
 
 -(void)pause:(BOOL)isPause;
 
+- (void)setRenderRotationOverride:(NSValue *)rotationOverride;
+
 @optional
 -(RTCVideoFrame*)captureFrame;
 

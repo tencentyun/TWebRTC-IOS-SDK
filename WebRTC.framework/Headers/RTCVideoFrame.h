@@ -41,6 +41,8 @@ RTC_OBJC_EXPORT
 /** Timestamp 90 kHz. */
 @property(nonatomic, assign) int32_t timeStamp;
 
+@property(nonatomic, assign) int frameType;
+
 @property(nonatomic, readonly) id<RTCVideoFrameBuffer> buffer;
 
 - (instancetype)init NS_UNAVAILABLE;

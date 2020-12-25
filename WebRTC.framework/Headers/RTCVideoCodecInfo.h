@@ -23,11 +23,16 @@ RTC_OBJC_EXPORT
 - (instancetype)initWithName:(NSString *)name;
 
 - (instancetype)initWithName:(NSString *)name
+                  supportBrame:(BOOL)supportBrame
+                  parameters:(nullable NSDictionary<NSString *, NSString *> *)parameters;
+
+- (instancetype)initWithName:(NSString *)name
                   parameters:(nullable NSDictionary<NSString *, NSString *> *)parameters
     NS_DESIGNATED_INITIALIZER;
 
 - (BOOL)isEqualToCodecInfo:(RTCVideoCodecInfo *)info;
 
+@property(nonatomic) BOOL supportBrame;
 @property(nonatomic, readonly) NSString *name;
 @property(nonatomic, readonly) NSDictionary<NSString *, NSString *> *parameters;
 

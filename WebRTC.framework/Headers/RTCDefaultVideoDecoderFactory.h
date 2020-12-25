@@ -20,6 +20,9 @@ NS_ASSUME_NONNULL_BEGIN
  */
 RTC_OBJC_EXPORT
 @interface RTCDefaultVideoDecoderFactory : NSObject <RTCVideoDecoderFactory>
+
+@property(nonatomic) BOOL supportBFrame;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -15,4 +15,7 @@
 
 RTC_OBJC_EXPORT
 @interface RTCVideoDecoderH264 : NSObject <RTCVideoDecoder>
+
+- (instancetype)initWithBFrame:(BOOL)supportBFrame;
+
 @end
