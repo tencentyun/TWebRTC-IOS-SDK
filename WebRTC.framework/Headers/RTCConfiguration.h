@@ -9,10 +9,11 @@
  */
 
 #import <Foundation/Foundation.h>
+#import "RTCMacros.h"
 
 #import "RTCCertificate.h"
 #import "RTCCryptoOptions.h"
-#import "RTCMacros.h"
+
 
 @class RTCIceServer;
 @class RTCIntervalRange;
@@ -77,8 +78,11 @@ RTC_OBJC_EXPORT
 @property(nonatomic, copy) NSArray<RTCIceServer *> *iceServers;
 
 /** An RTCCertificate for 're' use. */
+#ifdef RTC_IOS_BUILD_SYSBOL_RENAME
+@property(nonatomic, nullable) OBJRTCCertificate *certificate;
+#else
 @property(nonatomic, nullable) RTCCertificate *certificate;
-
+#endif
 /** Which candidates the ICE agent is allowed to use. The W3C calls it
  * |iceTransportPolicy|, while in C++ it is called |type|. */
 @property(nonatomic, assign) RTCIceTransportPolicy iceTransportPolicy;

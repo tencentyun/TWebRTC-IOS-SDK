@@ -9,6 +9,7 @@
  */
 
 #import <Foundation/Foundation.h>
+#import "RTCMacros.h"
 
 @class RTCStatistics;
 
@@ -32,6 +33,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 /** The id of this subreport, e.g. "RTCMediaStreamTrack_receiver_2". */
 @property(nonatomic, readonly) NSString *id;
+
+@property(nonatomic, readonly) NSString *kind;
 
 /** The timestamp of the subreport in microseconds since 1970-01-01T00:00:00Z. */
 @property(nonatomic, readonly) CFTimeInterval timestamp_us;
