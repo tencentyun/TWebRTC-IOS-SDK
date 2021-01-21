@@ -22,6 +22,7 @@ typedef NS_ENUM(NSUInteger, RTCFileLoggerSeverity) {
 typedef NS_ENUM(NSUInteger, RTCFileLoggerRotationType) {
   RTCFileLoggerTypeCall,
   RTCFileLoggerTypeApp,
+  RTCFileLoggerTypeAppAppend,
 };
 
 NS_ASSUME_NONNULL_BEGIN

@@ -300,6 +300,7 @@ RTC_OBJC_EXPORT
 /** Apply the  supported default RTCSessionDescription as the remote description. */
 - (void)defaultRemoteDescription:(RTCSessionDescription *)localSDP
         liveBroadcastingStreamUrl:(NSString*)liveBroadcastingStreamUrl
+        isPush:(BOOL)isPush
         isHevc:(BOOL)isHevc
         completionHandler:(nullable void (^)(NSError *_Nullable error))completionHandler;
 
