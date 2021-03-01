@@ -32,6 +32,8 @@ RTC_OBJC_EXPORT
 
 - (void)setRenderRotationOverride:(NSValue *)rotationOverride;
 
+- (void)setViewContentMode:(UIViewContentMode)contentMode;
+
 @optional
 -(RTCVideoFrame*)captureFrame;
 

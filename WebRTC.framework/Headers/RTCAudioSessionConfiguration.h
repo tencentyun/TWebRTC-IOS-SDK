@@ -43,6 +43,7 @@ RTC_OBJC_EXPORT
 /** Provide a way to override the default configuration. */
 + (void)setWebRTCConfiguration:(RTCAudioSessionConfiguration *)configuration;
 
++ (BOOL)supportPlayOrRecored;
 @end
 
 NS_ASSUME_NONNULL_END
