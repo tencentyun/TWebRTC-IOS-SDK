@@ -70,6 +70,11 @@ RTC_OBJC_EXPORT
 /** The delegate for this RtpReceiver. */
 @property(nonatomic, weak) id<RTCRtpReceiverDelegate> delegate;
 
+
+@optional
+
+-(void) backgroundVideoStream:(BOOL)isBackground;
+
 @end
 
 RTC_OBJC_EXPORT
