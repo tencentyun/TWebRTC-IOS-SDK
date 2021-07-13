@@ -16,12 +16,24 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@protocol FrameBitStreamDelegate <NSObject>
+
+-(void) onSEIData:(const uint8_t*)bitstream length:(size_t)length;
+
+@end
+
 /** RTCVideoDecoderFactory is an Objective-C version of webrtc::VideoDecoderFactory. */
 RTC_OBJC_EXPORT
 @protocol RTCVideoDecoderFactory <NSObject>
 
+
 - (nullable id<RTCVideoDecoder>)createDecoder:(RTCVideoCodecInfo *)info;
 - (NSArray<RTCVideoCodecInfo *> *)supportedCodecs;  // TODO(andersc): "supportedFormats" instead?
+
+@optional
+
+- (void)ResiterFrameBitStreamDelegate:(id<FrameBitStreamDelegate>)delegate;
+- (id<FrameBitStreamDelegate>)getFrameBitStreamDelegate;
 
 @end
 
