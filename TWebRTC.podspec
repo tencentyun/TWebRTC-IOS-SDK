@@ -9,13 +9,13 @@ Pod::Spec.new do |s|
   s.license      = "MIT"
 
   s.author             = { "tstan" => "tstan@tencent.com" }
-  s.version = "2.1.18"
+  s.version = "2.1.19"
   s.platform     = :ios
   s.platform     = :ios, "10.0"
 
   s.source       = { :git => "https://github.com/tencentyun/TWebRTC-IOS-SDK.git", :tag => "#{s.version}" }
 
-  s.pod_target_xcconfig = { 'VALID_ARCHS' => 'arm64 armv7 x86_64' }
+  #s.pod_target_xcconfig = { 'VALID_ARCHS' => 'arm64 armv7 x86_64' }
 
  s.source_files  = "TWEBRTC.framework/Headers/*.h"
   # s.exclude_files = "Classes/Exclude"
