@@ -9,9 +9,9 @@ Pod::Spec.new do |s|
   s.license      = "MIT"
 
   s.author             = { "tstan" => "tstan@tencent.com" }
-  s.version = "2.1.19"
+  s.version = "2.1.20"
   s.platform     = :ios
-  s.platform     = :ios, "10.0"
+  s.platform     = :ios, "9.0"
 
   s.source       = { :git => "https://github.com/tencentyun/TWebRTC-IOS-SDK.git", :tag => "#{s.version}" }
 
